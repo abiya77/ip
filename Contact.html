@@ -1,0 +1,123 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<body>
+
+    <h1>Contact Me</h1>
+    <p>I welcome questions, ideas, feedback, and opportunities to connect.</p>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="About.html">About Me</a> |
+        <a href="Skills.html">Skills &amp; Education</a> |
+        <a href="Projects.html">Projects &amp; Achievements</a> |
+        <a href="Mymedia.html">My Media &amp; Interests</a> |
+        <a href="Contact.html">Contact Me</a>
+    </nav>
+
+    <h2>Contact Information</h2>
+    <p>
+        <em>Email:</em>
+        <a href="mailto:abiyafikre@gmail.com">abiyafikre@gmail.com</a>
+    </p>
+    <p><em>Website:</em> My Personal Website</p>
+
+    <h2>Send Me a Message</h2>
+
+    <form action="mailto:abiyafikre@gmail.com" method="post" enctype="text/plain">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <label for="website">Your Website:</label><br>
+            <input type="url" id="website" name="website">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Message Details</legend>
+
+            <label for="subject">Subject:</label><br>
+            <select id="subject" name="subject" required>
+                <option value="">-- Select a Subject --</option>
+                <optgroup label="Frontend">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option value="Programming">Programming</option>
+                    <option value="Database">Database</option>
+                </optgroup>
+                <option value="Other">Other</option>
+            </select>
+            <br><br>
+
+            <p>How did you find my website?</p>
+
+            <input type="radio" id="search" name="source" value="Search Engine" required>
+            <label for="search">Search Engine</label><br>
+
+            <input type="radio" id="social" name="source" value="Social Media">
+            <label for="social">Social Media</label><br>
+
+            <input type="radio" id="friend" name="source" value="Friend or Colleague">
+            <label for="friend">Friend or Colleague</label><br><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="40" required></textarea>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Optional Information</legend>
+
+            <label for="contactdate">Preferred Contact Date:</label><br>
+            <input type="date" id="contactdate" name="contactdate"><br><br>
+
+            <label for="color">Choose a Favourite Color:</label><br>
+            <input type="color" id="color" name="color"><br><br>
+
+            <label for="rating">Rate My Website (1–10):</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="10"><br><br>
+
+            <input type="checkbox" id="reply" name="reply" value="Yes">
+            <label for="reply">I would like a reply to my message.</label>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <h2>Other Ways to Connect</h2>
+    <p>You can also connect with me through professional networks or other platforms.</p>
+
+    <ul>
+        <li><a href="https://github.com/">GitHub</a></li>
+    </ul>
+
+    <p>&copy; 2026 Samuel Firegedil. Personal website.</p>
+    <p>Thank you for visiting my website.</p>
+    <a href="index.html">Return to Home</a>
+
+</body>
+</html>
